@@ -88,6 +88,8 @@ def find_open_port():
     try:
         sock = socket()
         sock.bind(('', 0))
-        return sock.getsockname()[1]
+        port = sock.getsockname()[1]
+        sock.close()
+        return port
     except:
         raise ValueError("Could not find open port")
