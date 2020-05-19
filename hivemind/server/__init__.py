@@ -5,7 +5,7 @@ from collections import namedtuple
 from typing import Dict
 import logging
 
-from .connection_handler import handle_connection, ConnectionHandler
+from .connection_handler import ConnectionHandler
 from .dht_handler import DHTHandlerThread
 from ..dht import DHTNode
 from ..runtime import Runtime, ExpertBackend
